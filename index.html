@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="th">
   <head>
     <meta charset="UTF-8" />
@@ -83,11 +84,13 @@
       .hero {
         margin-bottom: 40px;
       }
+
       .hero h1 {
         font-size: 30px;
         font-weight: 600;
         margin-bottom: 10px;
       }
+
       .hero p {
         font-size: 14px;
         color: #666;
@@ -98,6 +101,7 @@
       .section {
         margin-top: 40px;
       }
+
       .section h3 {
         font-size: 16px;
         font-weight: 500;
@@ -114,6 +118,7 @@
         box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
         transition: 0.25s ease;
       }
+
       .card:active {
         transform: scale(0.97);
       }
@@ -122,18 +127,63 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 6px;
+        gap: 10px;
       }
+
       .package {
         font-size: 15px;
         font-weight: 500;
       }
+
       .price {
         font-size: 15px;
         font-weight: 600;
+        text-align: right;
       }
+
       .detail {
         font-size: 13px;
         color: #777;
+      }
+
+      /* DETAIL BOX */
+      .detail-box {
+        background: #fff;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 14px;
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
+      }
+
+      .detail-box h4 {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 12px;
+        color: #222;
+      }
+
+      .detail-box p {
+        font-size: 13px;
+        color: #666;
+        line-height: 1.8;
+      }
+
+      .detail-box ul {
+        padding-left: 20px;
+        margin-top: 8px;
+      }
+
+      .detail-box li {
+        font-size: 13px;
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 2px;
+      }
+
+      .note {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #eee;
       }
 
       /* CONTACT BAR BLACK */
@@ -146,6 +196,7 @@
         max-width: 520px;
         display: flex;
         gap: 10px;
+        z-index: 10;
       }
 
       .contact-bar a {
@@ -180,6 +231,7 @@
         align-items: center;
         font-size: 13px;
         color: #666;
+        z-index: 10;
       }
     </style>
   </head>
@@ -217,7 +269,7 @@
             <div class="package">ครึ่งวัน (3 ชม.)</div>
             <div class="price">2,000 บาท</div>
           </div>
-          <div class="detail">สัมมนา / เปิดบ้าน</div>
+          <div class="detail">การสัมมนา / กิจกรรมภายในองค์กร</div>
         </div>
 
         <div class="card">
@@ -229,24 +281,100 @@
         </div>
       </div>
 
-      <!-- เรตงานภายนอก -->
+      <!-- งานถ่ายภาพนอกรอบ -->
       <div class="section">
-        <h3>เรตงานภายนอก</h3>
+        <h3>งานถ่ายภาพนอกรอบ 🎓</h3>
 
         <div class="card">
           <div class="top">
-            <div class="package">3 ชั่วโมง</div>
-            <div class="price">3,000 บาท</div>
+            <div class="package">1 ชั่วโมง</div>
+            <div class="price">850 บาท</div>
           </div>
-          <div class="detail">งานเลี้ยง / กีฬาเล็ก</div>
+          <div class="detail">เริ่มต้นที่ 1 คน</div>
         </div>
 
         <div class="card">
           <div class="top">
-            <div class="package">6 ชั่วโมง</div>
-            <div class="price">5,500–6,000 บาท</div>
+            <div class="package">3 ชั่วโมง</div>
+            <div class="price">2,000 บาท</div>
           </div>
-          <div class="detail">งานอีเวนต์ / จัดเลี้ยง</div>
+          <div class="detail">เริ่มต้นที่ 1 คน</div>
+        </div>
+
+        <div class="detail-box">
+          <h4>รายละเอียดงานถ่ายภาพนอกรอบ</h4>
+
+          <p>🎓 ราคาเริ่มต้นสำหรับ 1 คน</p>
+
+          <ul>
+            <li>1 ชั่วโมง — 850 บาท</li>
+            <li>3 ชั่วโมง — 2,000 บาท</li>
+          </ul>
+
+          <p class="note">
+            👥 หากมีเพื่อนหรือบัณฑิตเพิ่ม<br />
+            เพิ่มคนละ 300 บาท / ต่อช่วงเวลา
+          </p>
+
+          <p class="note">
+            📍 ภายในเวลาที่จอง สามารถเดินทางไปถ่ายได้หลายสถานที่
+            ไม่จำกัดจำนวนสถานที่
+          </p>
+
+          <p class="note">
+            💰 กรณีสถานที่มีค่าใช้จ่ายเพิ่มเติม เช่น ค่าเข้า หรือค่าเช่าสถานที่
+            บัณฑิตเป็นผู้รับผิดชอบค่าใช้จ่ายในส่วนนี้
+          </p>
+        </div>
+      </div>
+
+      <!-- เรตงานภายนอก -->
+      <div class="section">
+        <h3>งานอื่น / งานภายนอก</h3>
+
+        <!-- งานเลี้ยง -->
+        <div class="card">
+          <div class="top">
+            <div class="package">งานเลี้ยง / งานสังสรรค์</div>
+            <div class="price">เริ่มต้น 3,000 บาท</div>
+          </div>
+          <div class="detail">งานเลี้ยง / งานสังสรรค์ / งานพบปะ</div>
+        </div>
+
+        <!-- งานกีฬา -->
+        <div class="card">
+          <div class="top">
+            <div class="package">งานกีฬา</div>
+            <div class="price">เริ่มต้น 3,000 บาท</div>
+          </div>
+          <div class="detail">งานกีฬา / กิจกรรมขนาดเล็ก</div>
+        </div>
+
+        <!-- งานอีเวนต์ -->
+        <div class="card">
+          <div class="top">
+            <div class="package">งานอีเวนต์</div>
+            <div class="price">เริ่มต้น 3,000 บาท</div>
+          </div>
+          <div class="detail">อีเวนต์ / งานจัดเลี้ยง / งานองค์กร</div>
+        </div>
+
+        <!-- งานสัมมนา -->
+        <div class="card">
+          <div class="top">
+            <div class="package">งานสัมมนา / อบรม</div>
+            <div class="price">สอบถามราคา</div>
+          </div>
+          <div class="detail">สัมมนา / อบรม / ประชุม / เปิดบ้าน</div>
+        </div>
+
+        <!-- งานอื่น ๆ -->
+        <div class="detail-box">
+          <h4>📋 งานอื่น ๆ</h4>
+          <p>
+            หากเป็นงานประเภทอื่นนอกเหนือจากรายการด้านบน
+            สามารถติดต่อสอบถามรายละเอียดและประเมินราคาก่อนได้
+          </p>
         </div>
       </div>
     </div>
